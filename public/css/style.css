@@ -59,12 +59,15 @@ h4.title {
   align-items: center;
 }
 
-.container {  
-  width: 1024px;
+.container {
+  width: 90%;
+  min-width: 1024px;
+  max-width: 1440px;
   min-height: calc(90vh - 80px);
   border-top: 4px solid var(--color-3);
   overflow-wrap: anywhere;
 }
+
 section .container {
   margin-top: 30px;
   min-height: calc(100vh - 30px - 80px);
@@ -133,14 +136,15 @@ section .container {
 }
 
 #menu ul {
-  width: 700px;
+  width: 60%;
   font-weight: 700;
   font-size: 13px;
   text-transform: uppercase;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+  transition: all 300ms;
 }
 
 #menu ul li a {
@@ -172,16 +176,8 @@ section .container {
   height: 20px;
 }
 
-#menuBtn {
+#menu span:not(.color-3) {
   display: none;
-  width: 40px;
-  background: none;
-  outline: none;
-  border: none;
-}
-
-#team {
-  min-height: calc(100vh - 80px);
 }
 
 #team #team-container{
@@ -194,7 +190,7 @@ section .container {
 #team .team-card {
   text-align: center;
   line-height: 25px;
-  width: 19%;
+  width: 18%;
   margin-bottom: 10px;
 }
 
@@ -219,11 +215,6 @@ section .container {
 #team .team-card h3 {
   font-size: 18px;
   letter-spacing: 2px;
-}
-
-#team .team-card h3 span:after {
-  content: '\A';
-  white-space: pre;
 }
 
 #team .team-card p {
@@ -252,7 +243,7 @@ section .container {
 
 #videos iframe {
   width: 30%;
-  height: 200px;
+  height: 250px;
   margin-bottom: 30px;
   box-shadow: var(--shadow);
 }
@@ -265,6 +256,7 @@ section .container {
 }
 
 #prices .price-card {
+  margin-bottom: 30px;
   width: 22%;
 }
 
@@ -357,8 +349,8 @@ section .container {
 
 #contact footer {
   margin-top: 40px;
+  line-height: 24px;
   text-align: center;
-  bottom: 20px;
 }
 
 #contact footer a:hover {

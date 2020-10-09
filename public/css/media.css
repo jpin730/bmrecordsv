@@ -1,14 +1,127 @@
+/* LAPTOP */
+
 @media (max-width: 1024px) {
   .container {
-    width: 768px;
+    min-width: 768px;
+  }
+
+  #videos iframe {
+    height: 180px;
+  }
+
+  #contact iframe {
+    width: 60%;
   }
 }
 
+/* TABLET */
+
 @media (max-width: 768px) {
   .container {
-    width: 425px;
+    min-width: 425px;
+  }
+
+  #menu p {
+    width: 125px;
+  }
+  
+  #menu #menu-list {
+    z-index: 9;
+    position: fixed;
+    top: 0;
+    left: 100vw;
+    height: calc(100vh - 80px);
+    width: 100vw;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-image: url("../img/bg-patern.png");
+    background-color: var(--color-1);
+  }
+  
+  #menu #menu-list a {
+    font-size: 16px;
+    display: block;
+    height: calc((100vh - 80px)/6);
+    width: 90vw;
+    text-align: center;
+    line-height: calc((100vh - 80px)/6);;
+  }
+
+  #menu ul li a:hover::after {
+    width: 0;
+  }
+
+  #menu .social-media {
+    width: 150px;
+  }
+
+  #menu .social-media .social-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  #menu span:not(.color-3) {
+    display: block;
+    width: 125px;
+  }
+
+  #menu #menuBtn {
+    margin-left: auto;
+    background: url("../img/menu.svg");
+    background-size: cover;
+    display: block;
+    outline: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+  }
+
+  #team .team-card {
+    width: 30%;
+  }
+
+  #music iframe {
+    width: 47%;
+  }
+
+  #videos iframe {
+    width: 47%;
+    height: 200px;
+  }
+  
+  #prices .price-card {
+    width: 45%;
+  }
+
+  #prices .container > small {
+    margin-top: 0;
+  }
+
+  #contact #contact-container {
+    display: block;
+  }
+
+  #contact .info {
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  #contact .social-media {
+    display: none;
+  }
+
+  #contact iframe {
+    width: 100%;
+  }
+
+  #contact footer {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
+
+/* MOBILE */
 
 @media (max-width: 425px) {
   .container {
