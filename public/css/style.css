@@ -63,7 +63,7 @@ h4.title {
   width: 90%;
   min-width: 1024px;
   max-width: 1440px;
-  min-height: 400px;
+  min-height: calc(90vh - 80px);
   border-top: 4px solid var(--color-3);
   overflow-wrap: anywhere;
 }
