@@ -8,13 +8,10 @@ function toggleMenuDisplay() {
     hideMenu = !hideMenu;
     if (hideMenu) {
       document.getElementById("menu-list").style.left = "100vw";
-      document.getElementById("menuBtn").style.background = "url('img/menu.svg')";
+      document.getElementById("menuBtn").style = "background: url('img/menu.svg'); background-size: 40px 40px;";
     } else {
       document.getElementById("menu-list").style.left = "0";
-      document.getElementById("menuBtn").style.background = "url('img/x.svg')";
+      document.getElementById("menuBtn").style = "background: url('img/x.svg'); background-size: 40px 40px";
     }
   }
-  console.log(hideMenu);
 }
-
-console.log(hideMenu);

@@ -42,7 +42,7 @@
     font-size: 16px;
     display: block;
     height: calc((100vh - 80px)/6);
-    width: 90vw;
+    width: 100%;
     text-align: center;
     line-height: calc((100vh - 80px)/6);;
   }
@@ -66,9 +66,11 @@
   }
 
   #menu #menuBtn {
+    transition: 300ms;
     margin-left: auto;
     background: url("../img/menu.svg");
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
     display: block;
     outline: none;
     border: none;
@@ -124,12 +126,47 @@
 /* MOBILE */
 
 @media (max-width: 425px) {
-  .container {
+  .container,
+  #header .container {
+    min-width: 0;
     width: 100%;
+    border: none;
+  }
+
+  #header p {
+    font-size: 12px;
   }
 
   #header h1 span:after {
       content: '\A';
       white-space: pre;
+  }
+
+  #menu p {
+    display: none;
+  }
+
+  #team .team-card {
+    width: 45%;
+  }
+  
+  #music #music-container,
+  #videos #videos-container,
+  #prices #prices-container,
+  #contact #contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #menu .container,
+  #music iframe,
+  #videos iframe,
+  #prices .price-card,
+  #prices .container > small,
+  #contact .info,
+  #contact iframe {
+    width: 90%;
   }
 }
