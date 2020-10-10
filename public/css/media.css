@@ -26,25 +26,32 @@
   }
   
   #menu #menu-list {
-    z-index: 9;
+    z-index: 10;
     position: fixed;
-    top: 0;
+    bottom: 80px;
     left: 100vw;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 2 * 80px);
     width: 100vw;
     flex-direction: column;
     justify-content: space-evenly;
     background-image: url("../img/bg-patern.png");
     background-color: var(--color-1);
+    box-shadow: var(--shadow);
   }
   
-  #menu #menu-list a {
+  #menu #menu-list li {
+    display: block;
+    width: 100%;
+  }
+  
+  #menu #menu-list li a {
+    width: 100%;
     font-size: 16px;
     display: block;
-    height: calc((100vh - 80px)/6);
+    height: calc((100vh - 2 * 80px)/6);
     width: 100%;
     text-align: center;
-    line-height: calc((100vh - 80px)/6);;
+    line-height: calc((100vh - 2 * 80px)/6);;
   }
 
   #menu ul li a:hover::after {
