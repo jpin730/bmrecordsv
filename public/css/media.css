@@ -59,12 +59,12 @@
   }
 
   #menu .social-media {
-    width: 150px;
+    width: 120px;
   }
 
   #menu .social-media .social-icon {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
 
   #menu span:not(.color-3) {
@@ -77,12 +77,13 @@
     margin-left: auto;
     background: url("../img/menu.svg");
     background-repeat: no-repeat;
-    background-size: 40px 40px;
+    background-size: 30px 30px;
     display: block;
     outline: none;
     border: none;
-    width: 40px;
-    height: 40px;
+    position: 0 0;
+    width: 30px;
+    height: 30px;
   }
 
   #team .team-card {
@@ -100,6 +101,10 @@
   
   #prices .price-card {
     width: 45%;
+  }
+
+  #prices .price-card a {
+    opacity: 1;
   }
 
   #prices .container > small {
@@ -173,7 +178,16 @@
   #prices .price-card,
   #prices .container > small,
   #contact .info,
-  #contact iframe {
+  #contact iframe,
+  #contact footer {
     width: 90%;
+  }
+
+  #prices .container > small {
+    margin: 0 auto;
+  }
+
+  #contact footer {
+    margin: 10px auto;
   }
 }
