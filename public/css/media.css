@@ -145,6 +145,10 @@
     border: none;
   }
 
+  section .container {
+    margin-top: 0;
+  }
+
   #header p {
     font-size: 12px;
   }
