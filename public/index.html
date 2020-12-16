@@ -261,6 +261,29 @@
   <!-- CONTACT END -->
   <div id="end-space"></div>
   <script src="app/menu.js"></script>
+
+  <!-- GOOGLE ANALYTICS -->
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+  <!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-analytics.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyAS1ukiAxWBltgNd1qAu3b-be_9OxIRYeA",
+      authDomain: "bmrecordsv.firebaseapp.com",
+      databaseURL: "https://bmrecordsv.firebaseio.com",
+      projectId: "bmrecordsv",
+      storageBucket: "bmrecordsv.appspot.com",
+      messagingSenderId: "349383478161",
+      appId: "1:349383478161:web:b919fbf1fcb7904ec06830",
+      measurementId: "G-FBD1611L95"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
 </body>
 
 </html>
