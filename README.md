@@ -2,4 +2,4 @@
 
 A static page for show the services of a music record studio.
 
-[Deploy](https://jpin730.github.io/bmrecordsv/)
+Deployment: [https://jpin730.github.io/bmrecordsv/](https://jpin730.github.io/bmrecordsv/)
